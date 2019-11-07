@@ -24,7 +24,7 @@
       "image": "esak248/multi-nginx",
       "hostname": "ngnix",
       "essential": true,
-      "portMapping": [
+      "portMappings": [
         {
           "hostPort": 80 ,
           "containerPort": 80
