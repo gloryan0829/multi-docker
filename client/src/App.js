@@ -9,9 +9,9 @@ class App extends Component {
     return (
         <Router>
           <div className="App">
-              <h1 className="App-title">Welcome to React</h1>
-              <Link to="/">Home</Link><br/>
-              <Link to="/otherpage">Other Page</Link>
+              <h1 className="App-title">멀티 도커 수정하기 #1 issue !!</h1>
+              <Link to="/">홈</Link><br/>
+              <Link to="/otherpage">다른 페이지</Link>
             <div>
               <Route exact path="/" component={Fib} />
               <Route path="/otherpage" component={OtherPage} />
