@@ -21,7 +21,7 @@
       "memory": 128
     },{
       "name": "nginx",
-      "image": "esak248/multi-ngnix",
+      "image": "esak248/multi-nginx",
       "hostname": "ngnix",
       "essential": true,
       "portMapping": [
