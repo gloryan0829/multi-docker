@@ -21,3 +21,16 @@ after_success:
   - docker push esak248/multi-server
   - docker push esak248/multi-worker
 
+deploy:
+  provider: elasticbeanstalk
+  region: ap-northeast-2
+  app: MultiDocker
+  env: Multidocker-env-1
+  bucket_name: elasticbeanstalk-ap-northeast-2-878392923027
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id:
+    secure: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
